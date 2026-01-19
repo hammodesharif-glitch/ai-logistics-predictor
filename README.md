@@ -46,12 +46,6 @@ python train_model.py
 streamlit run dashboard.py
 ```
 
-## 📸 Screenshots
-![Dashboard Overview](screenshots/dashboard_overview.png)
-*Executive dashboard with KPIs and risk analysis*
-
-![Prediction Tool](screenshots/prediction_tool.png)
-*Real-time delay probability with recommendations*
 
 ## 💡 Business Impact
 - **Top Risk Country**: Burundi (38.8% late rate)
