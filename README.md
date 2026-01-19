@@ -4,6 +4,7 @@
 
 [[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://your-deployed-link.com)
 ](https://ai-logistics-predictor.streamlit.app/)
+linkedin.com/in/mohamad-al-charif-5b7922278
 
 ## 📊 Project Overview
 Built as part of my M1 AI studies. This end-to-end ML system analyzes 10,324 historical shipments to predict delivery delays before they happen.
