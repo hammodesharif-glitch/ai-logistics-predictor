@@ -1,10 +1,9 @@
 # 🚢 AI Logistics Predictor
 
-**Predicting shipment delays with 78% accuracy (ROC-AUC) to help logistics managers make proactive decisions**
+**Predicting shipment delays (ROC-AUC 0.78, 68% recall on late shipments) to help logistics managers make proactive decisions**
 
-* [[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://your-deployed-link.com)
-](https://ai-logistics-predictor.streamlit.app/)
-* **LinkedIn:** [linkedin.com/in/mohamad-al-charif](https://www.linkedin.com/in/mohamad-al-charif-5b7922278)
+* [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://ai-logistics-predictor.streamlit.app/)
+* **LinkedIn:** [linkedin.com/in/mohamad-al-charif](https://www.linkedin.com/in/mohamad-al-charif)
 
 ## 📊 Project Overview
 Built as part of my M1 AI studies. This end-to-end ML system analyzes 10,324 historical shipments to predict delivery delays before they happen.
@@ -34,14 +33,14 @@ Built as part of my M1 AI studies. This end-to-end ML system analyzes 10,324 his
 ## 🚀 Quick Start
 ```bash
 # Clone the repo
-git clone https://github.com/YourUsername/ai-logistics-predictor.git
+git clone https://github.com/hammodesharif-glitch/ai-logistics-predictor.git
 cd ai-logistics-predictor
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Train the model
-python train_model.py
+# A trained model (logistics_predictor.pkl) is included.
+# To retrain it, run Logistics_Project.ipynb
 
 # Launch dashboard
 streamlit run dashboard.py
