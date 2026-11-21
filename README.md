@@ -12,6 +12,8 @@ Predicts, **before dispatch**, whether a pharmaceutical supply-chain shipment li
 | **Grouped 5-fold CV** | **0.900** | **0.519** | **80.1%** | **39.0%** | **0.525** |
 | **Temporal hold-out** (train < May 2014, test after) | **0.836** | **0.350** | **76.4%** | **32.2%** | **0.453** |
 
+![Results](reports/figures/results.png)
+
 A random classifier would score a PR-AUC equal to the base rate, about 0.11–0.13. The decision threshold is chosen on out-of-fold predictions: it is the best-precision threshold that still keeps recall at 80% or higher.
 
 ## What makes it reliable
@@ -38,6 +40,7 @@ git clone https://github.com/hammodesharif-glitch/ai-logistics-predictor.git
 cd ai-logistics-predictor
 pip install -r requirements.txt
 python src/train.py
+python src/plot_results.py
 pytest -q
 streamlit run dashboard.py
 ```
@@ -48,6 +51,7 @@ streamlit run dashboard.py
 src/features.py   data loading, target, feature engineering
 src/model.py      LightGBM seed ensemble + SHAP contributions
 src/train.py      grouped CV, temporal hold-out, threshold selection, artefacts
+src/plot_results.py  ROC / PR curves and evaluation summary figure
 dashboard.py      Streamlit dashboard
 tests/            pipeline and leakage tests
 models/ reports/  trained model, metrics.json, out-of-fold predictions
